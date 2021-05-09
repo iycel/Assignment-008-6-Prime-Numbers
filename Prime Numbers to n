@@ -1,0 +1,11 @@
+min_value = 2
+max_value = 100
+prime_numbers = []
+for i in range(min_value, max_value + 1):
+    if i > 1:
+        for x in range(2,i):
+            if (i%x) == 0:
+                break
+        else:
+            prime_numbers.append(i)
+print(prime_numbers)
